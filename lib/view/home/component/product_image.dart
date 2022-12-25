@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_parallaxlogic/component/widgets.dart';
 import 'package:flutter_demo_parallaxlogic/utils/constants.dart';
 
 class ImageCard extends StatelessWidget {
@@ -30,8 +31,8 @@ class ImageCard extends StatelessWidget {
                         image: image,
                         fit: BoxFit.fill,
                         imageErrorBuilder: (context, error, stacktrace) {
-                          return const Center(
-                              child: Text('Image Not Available'));
+                          return Center(
+                              child: customText(text: 'Image Not Available'));
                         });
                   });
             }),

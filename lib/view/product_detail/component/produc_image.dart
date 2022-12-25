@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../component/widgets.dart';
+
 class ProductImageCard extends StatelessWidget {
   const ProductImageCard({
     Key? key,
@@ -27,7 +29,8 @@ class ProductImageCard extends StatelessWidget {
                       image: image!,
                       fit: BoxFit.fitHeight,
                       imageErrorBuilder: (context, error, stacktrace) {
-                        return const Center(child: Text('Image Not Available'));
+                        return Center(
+                            child: customText(text: 'Image Not Available'));
                       });
                 });
           }),

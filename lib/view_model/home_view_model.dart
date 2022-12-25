@@ -26,10 +26,10 @@ class HomeViewModel extends ChangeNotifier {
   }
 
   HomeViewModel() {
-    getProduct();
+    getProducts();
   }
 
-  getProduct() async {
+  getProducts() async {
     setLoding(true);
     var response = await HomeServices.getProduct();
     if (response is Success) {
