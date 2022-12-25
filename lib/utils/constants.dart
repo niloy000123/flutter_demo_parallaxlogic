@@ -25,7 +25,7 @@ const PADING_M_SIZE = 10.0;
 const PADING_S_SIZE = 8.0;
 
 //error code
-const USER_INVALID_RESPONSE = 100;
+const INVALID_RESPONSE = 100;
 const NO_INTERNATE = 101;
 const INVALID_FORMAT = 102;
 const UNKNOWN_ERROR = 103;

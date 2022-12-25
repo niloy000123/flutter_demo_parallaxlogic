@@ -17,7 +17,7 @@ class HomeServices {
         return Success(responce: productList);
       } else {
         return Failure(
-            code: USER_INVALID_RESPONSE, errorResponce: INVALID_RESPONSE_MSG);
+            code: INVALID_RESPONSE, errorResponce: INVALID_RESPONSE_MSG);
       }
     } on HttpException {
       return Failure(code: HTTP_ERROR, errorResponce: HTTP_ERROR_MSG);
